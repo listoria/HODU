@@ -39,13 +39,21 @@
             </p>
             <a class="cta-btn" href="#">Download</a>
           </div>
-          <img src="images/01_main_cat.png" alt="Main Hodu" class="hero-image" />
+          <img
+            src="images/01_main_cat.png"
+            alt="Main Hodu"
+            class="hero-image"
+          />
         </div>
       </section>
 
       <section class="features" id="features">
         <div class="features-content">
-          <img src="images/02_lying_cat.png" alt="Lying Hodu" class="feature-image" />
+          <img
+            src="images/02_lying_cat.png"
+            alt="Lying Hodu"
+            class="feature-image"
+          />
           <div class="feature-text">
             <h3>
               Lorem Ipsum is simply dummy text of the printing and dummy text
@@ -63,9 +71,9 @@
           <h4>dummy text of the printing and dummy</h4>
           <p>
             Lorem Ipsum is simply
-            <span class="highlighted-text">dummy text</span> of
-            the printing and typesetting Industry.<br />Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
+            <span class="highlighted-text">dummy text</span> of the printing and
+            typesetting Industry.<br />Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
           </p>
         </div>
         <ul class="gallery-list">
@@ -95,13 +103,29 @@
           <a class="cta-btn" href="#">Show more</a>
         </div>
       </section>
-      
+
       <hr />
 
       <section class="location">
         <p class="location-title">Where you'll be</p>
-        <p class="location-address">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-        <div class="map-placeholder">Map</div>
+        <p class="location-address">
+          330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+        </p>
+        <div id="map" class="map"></div>
+        <script
+          type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f3b20e21e043a5ed5ef14b78326a5be8"
+        ></script>
+        <script>
+          var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+            mapOption = {
+              center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+              level: 3, // 지도의 확대 레벨
+            };
+
+          // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+          var map = new kakao.maps.Map(mapContainer, mapOption);
+        </script>
       </section>
 
       <section class="subscribe">
@@ -115,7 +139,12 @@
             </p>
           </div>
           <div class="subscribe-form-container">
-            <form id="subscribeForm" class="subscribe-form" action="/" method="post">
+            <form
+              id="subscribeForm"
+              class="subscribe-form"
+              action="/"
+              method="post"
+            >
               <img src="icons/mail.svg" alt="e-mail icon" class="email-icon" />
               <input
                 class="email-input"
@@ -132,9 +161,15 @@
         <!-- 모달창 -->
         <div class="modal" id="modal">
           <div class="modal-content">
-            <img src="images/10_modal_cat.png" alt="Modal HODU" class="modal-image" />
+            <img
+              src="images/10_modal_cat.png"
+              alt="Modal HODU"
+              class="modal-image"
+            />
             <p class="modal-title">Thank you!</p>
-            <p class="modal-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <p class="modal-text">
+              Lorem Ipsum is simply dummy text of the printing industry.
+            </p>
             <button class="modal-btn" id="modal-btn">OK! I love HODU</button>
           </div>
         </div>
@@ -152,13 +187,19 @@
             <a href="#"><img src="icons/icon-blog.png" alt="Blog icon" /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="icons/icon-insta.png" alt="Instagram icon" /></a>
+            <a href="#"
+              ><img src="icons/icon-insta.png" alt="Instagram icon"
+            /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="icons/icon-facebook.png" alt="Facebook icon" /></a>
+            <a href="#"
+              ><img src="icons/icon-facebook.png" alt="Facebook icon"
+            /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="icons/icon-youtube.png" alt="YouTube icon" /></a>
+            <a href="#"
+              ><img src="icons/icon-youtube.png" alt="YouTube icon"
+            /></a>
           </li>
         </ul>
       </div>

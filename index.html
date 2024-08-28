@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HODU</title>
+  </head>
+  <body>
+    <!-- 헤더 영역 -->
+    <header>
+      <div class="header-container">
+        <h1 class="visually-hidden">HODU</h1>
+        <a href="index.html">
+          <img src="icons/logo.svg" alt="HODU Logo" class="logo" />
+        </a>
+        <nav>
+          <ul class="nav-menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">About</a></li>
+            <li class="menu-item"><a href="#">Support</a></li>
+            <li class="menu-item download-btn"><a href="#">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              Industry.<br />Lorem Ipsum has been the industry's standard dummy
+              text<br />ever since the 1500s, when an unknown
+            </p>
+            <a class="cta-btn" href="#">Download</a>
+          </div>
+          <img src="images/01_main_cat.png" alt="Main Hodu" class="hero-image" />
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="features-content">
+          <img src="images/02_lying_cat.png" alt="Lying Hodu" class="feature-image" />
+          <div class="feature-text">
+            <h3>
+              Lorem Ipsum is simply dummy text of the printing and dummy text
+            </h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              Industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery-header">
+          <h4>dummy text of the printing and dummy</h4>
+          <p>
+            Lorem Ipsum is simply
+            <span class="highlighted-text">dummy text</span> of
+            the printing and typesetting Industry.<br />Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+          </p>
+        </div>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="images/03_flex_cat.png" alt="Hodu's photo 01" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/04_flex_cat.png" alt="Hodu's photo 02" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/05_flex_cat.png" alt="Hodu's photo 03" />
+          </li>
+        </ul>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="images/06_flex_cat.png" alt="Hodu's photo 04" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/07_flex_cat.png" alt="Hodu's photo 05" />
+          </li>
+          <li class="gallery-item">
+            <img src="images/08_flex_cat.png" alt="Hodu's photo 06" />
+          </li>
+        </ul>
+        <div class="explore-more">
+          <p class="explore-text">Continue exploring HODU</p>
+          <a class="cta-btn" href="#">Show more</a>
+        </div>
+      </section>
+      
+      <hr />
+
+      <section class="location">
+        <p class="location-title">Where you'll be</p>
+        <p class="location-address">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        <div class="map-placeholder">Map</div>
+      </section>
+
+      <section class="subscribe">
+        <div class="subscribe-container">
+          <div class="subscribe-text-container">
+            <p class="subscribe-title">Subscribe to our Blog post</p>
+            <p class="subscribe-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              Industry.<br />Lorem Ipsum has been the industry's standard dummy
+              text
+            </p>
+          </div>
+          <div class="subscribe-form-container">
+            <form id="subscribeForm" class="subscribe-form" action="/" method="post">
+              <img src="icons/mail.svg" alt="e-mail icon" class="email-icon" />
+              <input
+                class="email-input"
+                type="email"
+                name="email"
+                placeholder="Enter your e-mail address"
+                required="required"
+              />
+              <button class="cta-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="background-cat"></div>
+        <!-- 모달창 -->
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="images/10_modal_cat.png" alt="Modal HODU" class="modal-image" />
+            <p class="modal-title">Thank you!</p>
+            <p class="modal-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <button class="modal-btn" id="modal-btn">OK! I love HODU</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+      <div class="footer-container">
+        <a href="index.html">
+          <img src="icons/logo.svg" alt="HODU Logo" class="footer-logo" />
+        </a>
+        <ul class="social-icons">
+          <li class="social-icon">
+            <a href="#"><img src="icons/icon-blog.png" alt="Blog icon" /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="icons/icon-insta.png" alt="Instagram icon" /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="icons/icon-facebook.png" alt="Facebook icon" /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="icons/icon-youtube.png" alt="YouTube icon" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn"></button>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -365,7 +365,7 @@ hr {
 
 /* 아래쪽 배경 */
 .background-cat {
-  background-image: url("/images/09_bottom_cat.png");
+  background-image: url("images/09_bottom_cat.png");
   height: 21.25rem;
   background-position: center;
   background-size: cover;
@@ -471,7 +471,7 @@ hr {
   right: 1.875rem;
   z-index: 100;
   background-color: #fff;
-  background-image: url(/icons/keyboard_arrow_up.svg);
+  background-image: url(icons/keyboard_arrow_up.svg);
   border-radius: 50%;
   border: 1px solid #c4c4c4;
 }

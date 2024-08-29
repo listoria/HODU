@@ -43,18 +43,7 @@ header {
   top: 0;
   z-index: 10;
   position: fixed;
-  /* transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out; */
 }
-
-/* header.fixed {
-  position: fixed;
-  transform: translateY(0);
-}
-
-header.hidden {
-  transform: translateY(-100%);
-} */
 
 .header-container {
   display: flex;
@@ -129,6 +118,11 @@ h2 {
 
 /* 두 번째 섹션 */
 
+.features {
+  margin-top: 5rem;
+  margin-bottom: 7.5rem;
+}
+
 .features-content {
   width: 75%;
   max-width: 80rem;
@@ -141,9 +135,6 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.feature-text {
   max-width: 31.875rem;
 }
 
@@ -167,11 +158,6 @@ h3 {
   margin-right: 6.875rem;
 }
 
-.features {
-  margin-top: 5rem;
-  margin-bottom: 7.5rem;
-}
-
 /* 갤러리 섹션 */
 
 .gallery {
@@ -186,6 +172,7 @@ h3 {
 .gallery-header p {
   line-height: 1.25rem;
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 h4 {
@@ -197,7 +184,7 @@ h4 {
 }
 
 .highlighted-text {
-  color: #D97652;
+  color: #d97652;
   font-weight: 700;
 }
 
@@ -210,10 +197,6 @@ h4 {
 
 .gallery-header {
   margin-bottom: 5.5rem;
-}
-
-.gallery-header p {
-  text-align: center;
 }
 
 .gallery-item img {
@@ -252,6 +235,7 @@ hr {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
 }
 
 .location {
@@ -271,10 +255,6 @@ hr {
   margin-bottom: 3rem;
 }
 
-.location {
-  margin-bottom: 5rem;
-}
-
 .map {
   width: 100%;
   height: 32.5rem;
@@ -283,25 +263,15 @@ hr {
 
 /* 구독 섹션 */
 
-.subscribe-container {
-  
-  max-width: 80rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.subscribe-text-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .subscribe {
   position: relative;
 }
 
 .subscribe-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   background-color: #263140;
   width: 100%;
   height: 12.5rem;
@@ -311,9 +281,11 @@ hr {
   padding: 3.125rem 3.625rem;
   z-index: 1;
 }
+
 .subscribe-text-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 49.43rem;
   height: 6.1875rem;
 }
